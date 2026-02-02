@@ -174,7 +174,18 @@ class Polls_Controller
 			return $resulting_poll;
 		}
 
-		return rest_ensure_response($resulting_poll->to_array());
+		$response_data = $resulting_poll->to_array();
+		/**
+		 * Fires when a poll is created via the REST API.
+		 *
+		 * @since 1.7.3
+		 *
+		 * @param array            $response_data The poll data.
+		 * @param \WP_REST_Request $request       The request object.
+		 */
+		do_action('crowdsignal_forms_poll_created', $response_data, $request);
+
+		return rest_ensure_response($response_data);
 	}
 
 	/**
@@ -198,7 +209,18 @@ class Polls_Controller
 			return $resulting_poll;
 		}
 
-		return rest_ensure_response($resulting_poll->to_array());
+		$response_data = $resulting_poll->to_array();
+		/**
+		 * Fires when a poll is updated via the REST API.
+		 *
+		 * @since 1.7.3
+		 *
+		 * @param array            $response_data The poll data.
+		 * @param \WP_REST_Request $request       The request object.
+		 */
+		do_action('crowdsignal_forms_poll_updated', $response_data, $request);
+
+		return rest_ensure_response($response_data);
 	}
 
 	/**

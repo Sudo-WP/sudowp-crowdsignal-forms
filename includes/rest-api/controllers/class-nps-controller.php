@@ -102,7 +102,18 @@ class Nps_Controller
 			return $result;
 		}
 
-		return rest_ensure_response($result->to_block_attributes());
+		$response_data = $result->to_block_attributes();
+		/**
+		 * Fires when an NPS survey is upserted via the REST API.
+		 *
+		 * @since 1.7.3
+		 *
+		 * @param array            $response_data The survey data.
+		 * @param \WP_REST_Request $request       The request object.
+		 */
+		do_action('crowdsignal_forms_nps_upserted', $response_data, $request);
+
+		return rest_ensure_response($response_data);
 	}
 
 	/**

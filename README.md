@@ -19,6 +19,7 @@
 
 ### 1.7.3 - SudoWP Security Release
 *   **SECURITY**: Patched CVE-2025-69015. Restricted REST API management endpoints for Polls, Feedback, and NPS surveys to users with `edit_others_posts` capability.
+*   **FEATURE**: Added action hooks for form creation/updates (`crowdsignal_forms_poll_created`, etc.) to support integrations (e.g., Bit Integrations).
 *   **MODERNIZATION**: Enforced strict typing (`declare(strict_types=1);`).
 *   **BRANDING**: Updated identity to SudoWP.
 

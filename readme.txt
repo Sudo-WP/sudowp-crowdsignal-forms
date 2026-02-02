@@ -33,5 +33,11 @@ The SudoWP Crowdsignal Forms plugin allows you to create and manage polls right 
 
 = 1.7.3 =
 *   **SECURITY**: Patched CVE-2025-69015 (Missing Authorization) by restricting sensitive REST API endpoints.
+*   **FEATURE**: Added action hooks `crowdsignal_forms_poll_created`, `crowdsignal_forms_poll_updated`, `crowdsignal_forms_feedback_upserted`, and `crowdsignal_forms_nps_upserted` for better 3rd-party integration.
 *   **MODERNIZATION**: Renamed to SudoWP Crowdsignal Forms.
 *   **MODERNIZATION**: Added strict type declarations.
+
+== Upgrade Notice ==
+
+= 1.7.3 =
+This is a critical security release patching CVE-2025-69015 (Missing Authorization). It also adds new developer hooks for integrations. Immediate update is recommended.

@@ -1,0 +1,25 @@
+# WordPress
+wp-config.php
+wp-content/uploads/
+wp-content/cache/
+wp-content/upgrade/
+
+# Packages
+node_modules/
+vendor/
+
+# Editors
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+debug.log
+error.log
+
+# SudoWP
+.sudowp-config.json
