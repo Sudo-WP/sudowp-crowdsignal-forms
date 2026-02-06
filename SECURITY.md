@@ -60,8 +60,8 @@ All `$_GET`, `$_POST`, and `$_REQUEST` usages are properly handled:
 
 If you discover a security vulnerability in this plugin, please report it to the SudoWP team:
 
-- **Email**: security@sudowp.com (if available)
-- **GitHub**: Open a security advisory on the repository
+- **GitHub Security Advisory**: [Create a security advisory](https://github.com/Sudo-WP/sudowp-crowdsignal-forms/security/advisories/new) (preferred method)
+- **GitHub Issue**: Contact the maintainers via a private issue
 
 Please do **not** open public issues for security vulnerabilities.
 
