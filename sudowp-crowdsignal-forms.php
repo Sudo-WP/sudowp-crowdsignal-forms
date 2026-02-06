@@ -30,7 +30,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	die;
 }
 
-define( 'CROWDSIGNAL_FORMS_VERSION', '1.7.2' );
+define( 'CROWDSIGNAL_FORMS_VERSION', '1.7.3' );
 define( 'CROWDSIGNAL_FORMS_PLUGIN_FILE', __FILE__ );
 define( 'CROWDSIGNAL_FORMS_PLUGIN_BASENAME', plugin_basename( __FILE__ ) );
 
