@@ -12,7 +12,7 @@
 ## Installation
 
 1.  **Deactivate** the original Crowdsignal Forms plugin.
-2.  **Delete** the original plugin to avoid conflicts.
+2.  **Delete** the original Crowdsignal Forms plugin to avoid conflicts.
 3.  **Install** and **Activate** `SudoWP Crowdsignal Forms`.
 
 ## Changelog
